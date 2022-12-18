@@ -1,0 +1,7 @@
+.container{
+  position: fixed;
+  float: left;
+  right: auto;
+  left: 5px !important;
+  top: 70px !important;
+}
