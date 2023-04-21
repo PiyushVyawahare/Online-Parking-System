@@ -80,7 +80,6 @@ export default function Login() {
 
   return (
     <>
-    <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -144,7 +143,6 @@ export default function Login() {
           </Box>
         </Box>
       </Container>
-    </ThemeProvider>
     </>
   )
 }

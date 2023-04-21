@@ -10,32 +10,32 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import CallIcon from '@mui/icons-material/Call';
 import style from './style.module.css'
 
-import api from '../../api'
-import { useNavigate } from 'react-router-dom';
+// import api from '../../api'
+// import { useNavigate } from 'react-router-dom';
 import Logo from '../logo';
 
 export default function IconMenu() {
 
-  var navigate = useNavigate();
+  // var navigate = useNavigate();
 
   function onHome(){
     window.location.href('/')
   }
 
-  function onLogout(){
-    api.get("/logout", {withCredentials: true})
-    .then(function(res){
-      if(res.status === 200){
-        console.log(res);
-        window.location.href= "/";
-      }
-      else
-        console.log(res);
-    })
-    .catch(function(err){
-      console.log(err);
-    });
-  }
+  // function onLogout(){
+  //   api.get("/logout", {withCredentials: true})
+  //   .then(function(res){
+  //     if(res.status === 200){
+  //       console.log(res);
+  //       window.location.href= "/";
+  //     }
+  //     else
+  //       console.log(res);
+  //   })
+  //   .catch(function(err){
+  //     console.log(err);
+  //   });
+  // }
 
   return (
     <Paper className={style.container} sx={{ width: 220, maxWidth: '100%' }}>

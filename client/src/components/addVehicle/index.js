@@ -99,6 +99,7 @@ export default function AddVehicle() {
     api.post('/addVehicle', vehicle_data, {withCredentials:true})
     .then(function(value){
       handleClose();
+      setAlert(value.status)
     })
     .catch(function(err){
       setAlert(err.response.status);

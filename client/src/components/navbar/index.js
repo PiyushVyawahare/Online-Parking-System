@@ -35,7 +35,7 @@ const ResponsiveAppBar = (props) => {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    // <ThemeProvider theme={theme}>
 
     <AppBar position="sticky">
       <Container maxWidth="xl">
@@ -117,7 +117,7 @@ const ResponsiveAppBar = (props) => {
         </Toolbar>
       </Container>
     </AppBar>
-            </ThemeProvider>
+            // </ThemeProvider>
   );
 };
 export default ResponsiveAppBar;

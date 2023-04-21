@@ -1,7 +1,7 @@
 import React from 'react'
-import DrawerAppBar from '../../components/drawerAppbar'
+import DrawerAppBar from '../../components/dDrawerAppbar'
 
-export default function OwnerHome() {
+export default function DriverHome() {
   return (
     <>
     <DrawerAppBar isLoggedIn={true}></DrawerAppBar>

@@ -47,10 +47,14 @@ export default function SelectVehicle() {
             label="Select Vehicle"
             onChange={handleChange}
             >
-            <MenuItem value={1}>Car</MenuItem>
+            {/* <MenuItem value={1}>Car</MenuItem>
             <MenuItem value={2}>Bike</MenuItem>
             <MenuItem value={3}>Scooter</MenuItem>
+             */}
             
+            {vehicleData?.map((vehicle)=>{
+              return (<MenuItem value={vehicle.vname}>{vehicle.vname}</MenuItem>)
+            })}
           </Select>
         </FormControl>
       </ListItem>
