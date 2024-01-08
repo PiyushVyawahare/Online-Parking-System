@@ -156,7 +156,7 @@ app.post("/verifyUser", function(req, res){
   if(!userId || !otp){
 		res.status(400).end();
 		return;
-	}
+	} 
 
   otpModel.findOne({userId: userId})
   .then(function(value){

@@ -69,7 +69,7 @@ export default function VerifyUser() {
         setAlert(res.status);
         setTimeout(()=>{
           closeAlert();
-        }, 3000);
+        }, 3000); 
     })
     .catch(function(err){
       setAlert(err.response.status);
